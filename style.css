@@ -31,11 +31,9 @@
 
     section {
       width: 100%;
-      /* padding: 40px 20px; */
-      /* max-width: 1300px; */
     }
     a {
-      color: var(--secondary-txt);
+      color: var(--primary-bg);
     }
     
     /* Header */
@@ -130,10 +128,8 @@
 
      
     .section { 
-        padding: 80px 20px; 
+        padding: 20px; 
     }
-   
-    
 
     .hero {
       position: relative;
@@ -233,10 +229,11 @@
 
     .section-card {
       width: 30%;
-      max-width: 278px;
+      max-width: 350px;
       text-align: center;
       padding: 8px;
-      border: 2px solid #c00505;
+      border: 1px solid var(--primary-txt);
+      box-shadow: 0 1px 5px 0px var(--primary-bg);
       border-radius: 10px;
     }
     
@@ -250,7 +247,7 @@
     }
 
     .home-service-section p {
-      color: var(--alternate-txt);
+      color: var(--primary-txt);
     }
 
     .service-header {
@@ -266,8 +263,8 @@
     }
 
     .service-card {
-      background: var(--secondary-bg);
-      color: var(--secondary-txt);
+      background: var(--alternate-bg);
+      color: var(--primary-txt);
       padding: 20px;
       border-radius: 10px;
       text-align: center;
@@ -277,15 +274,11 @@
       vertical-align: middle;
       margin-right: 8px;
       font-size: 20px;
-      background-color: var(--primary-bg);
+      background-color: var(--alternate-txt);
     }
 
     .home-project-section {
       padding: 40px 20px;
-    }
-
-    .home-project-section p {
-      color: var(--alternate-txt);
     }
 
     .project-header {
@@ -300,7 +293,7 @@
     }
 
     .project-card {
-      background: var(--secondary-bg);
+      background: var(--alternate-txt);
       color: var(--secondary-txt);
       border-radius: 10px;
       overflow: hidden;
@@ -330,12 +323,11 @@
       background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(images/backhoe.jpeg);
       background-size: cover;
       background-position: center;
-      /* filter: brightness(80%); */
       padding: 40px 20px;
       margin: 62px 0;
     }
     .home-testimonial-section p {
-      color: var(--secondary-txt);
+      color: var(--primary-txt);
     }
     .testimonial-header {
       text-align: center;
@@ -349,8 +341,8 @@
 
     }
     .testimonial-card {
-      background: var(--secondary-bg);
-      color: var(--secondary-txt);
+      background: var(--alternate-bg);
+      color: var(--primary-bg);
       padding: 20px;
       border-radius: 10px;
       text-align: center;
@@ -395,7 +387,7 @@
     }
 
     #footer p {
-      color: var(--primary-bg);
+      color: var(--alternate-txt);
       margin-top: 14px;
     }
     .map-img {
@@ -421,6 +413,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+    }
+    .nav-links a {
+      color: var(--alternate-bg);
+      margin: 8px;
     }
 
     @media (max-width: 768px) {
@@ -527,11 +523,11 @@
       margin: auto;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
+      gap: 60px;
       margin-top: 40px;
     }
     .team-card {
-      background: var(--secondary-bg);
+      background: var(--alternate-bg);
       color: var(--secondary-txt);
       padding: 20px;
       border-radius: 10px;
@@ -551,8 +547,8 @@
     }
     .team-card p {
       font-size: 12px;
-      color: var(--alternate-txt);
-      margin-bottom: 8px;
+      color: var(--primary-txt);
+      /* margin-bottom: 8px; */
     }
     .team-card .social-icons {
       display: flex;
@@ -561,7 +557,7 @@
     }
     .team-card .social-icon {
       font-size: 20px;
-      color: var(--secondary-txt);
+      color: var(--secondary-bg);
       transition: color 0.3s;
     }
     .team-card .social-icon:hover {
@@ -647,17 +643,9 @@
       margin-bottom: 20px;
       color: var(--primary-bg);
     }
-    .project-card {
-      background: var(--secondary-bg);
-      color: var(--secondary-txt);
-      padding: 10px;
-      border-radius: 10px;
-      text-align: center;
-    }
     .project-card img {
       width: 100%;
       height: auto;
-      border-radius: 10px;
       margin-bottom: 12px;
     }
     .project-info h3 {
