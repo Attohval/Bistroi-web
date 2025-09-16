@@ -1,0 +1,44 @@
+Email: bistroiconstruction@gmail.com
+Phone: 07077118289
+
+Develop a website (
+
+    colors{ 
+        primary bg: #c00505
+        secondary bg: #650505
+        primary txt: #212020ff
+        secondary txt: #ffffff
+    }
+
+    Typography{ Poppins, Inter, or Roboto }
+
+    Layout{ Full-width sections, big hero image, lots of whitespaces }
+    
+    Navigation{ Fixed top navbar, hamburger menu on mobile }
+    
+    Footer{ Company info, quick links, social media icons }
+
+    Home : Hero section with background image,services overview and a call-to-action.
+    
+    About Us: Company story, values and mission.
+    
+    Services: List of services with images.
+    
+    Projects: Gallery of completed projects with short descriptions.
+    
+    Contact: Contact form, company address and map.
+
+
+    ------------------------------------------------
+    Hamburger menu: Slide from right, toggle on and off, click anywhere on the page to remove toggled menu.
+
+    Host on Netlify and get a domain name with .ng
+)
+
+.ng Domain Costs (Nigeria)
+
+Registrar                       cost for 1year (.ng)
+
+DomainKing                      N17,5000/year
+
+WhoGoHost                       N15,600/year
