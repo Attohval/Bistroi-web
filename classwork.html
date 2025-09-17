@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 40px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 32px;
+
+        }
+
+        .card {
+            border: 1px solid #000;
+            background-color: #c4bebe;
+            border-radius: 8px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="card">
+            <img src="images/user.jpeg" alt="">
+            <h2>UserName</h2>
+            <h4>Description</h4>
+        </div>
+        <div class="card">
+            <img src="images/user.jpeg" alt="">
+            <h2>UserName</h2>
+            <h4>Description</h4>
+        </div>
+        <div class="card">
+            <img src="images/user.jpeg" alt="">
+            <h2>UserName</h2>
+            <h4>Description</h4>
+        </div>
+        <div class="card">
+            <img src="images/user.jpeg" alt="">
+            <h2>UserName</h2>
+            <h4>Description</h4>
+        </div>
+        <div class="card">
+            <img src="images/user.jpeg" alt="">
+            <h2>UserName</h2>
+            <h4>Description</h4>
+        </div>
+        <div class="card">
+            <img src="images/user.jpeg" alt="">
+            <h2>UserName</h2>
+            <h4>Description</h4>
+        </div>
+    </div>
+</body>
+</html>
