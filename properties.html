@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties for Sale</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container { max-width:1200px; margin-top: 60px; padding:40px 20px; text-align: center; }
+        
+    /* Filter section */
+    .filters { display:flex; flex-wrap:wrap; gap:15px; justify-content:center; margin-bottom:30px; }
+    .filters input, .filters select {
+      padding:10px; border:1px solid #ccc; border-radius:5px; min-width:200px;
+    }
+
+    /* Grid */
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:20px; }
+    .card { background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+    .card img { width:100%; height:200px; object-fit:cover; }
+    .card .info { padding:20px; text-align:left; }
+    .card a { display:inline-block; margin-top:10px }
+
+    /* No results message */
+    #noResults {
+      display:none;
+      text-align:center;
+      font-size:1.2rem;
+      color:#555;
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html"><h1>My Website</h1></a>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+  </header>
+  <!-- Side nav menu -->
+  <nav id="sideMenu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" id="contactUs">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h2 >Available Properties</h2>
+
+    <!-- Filters -->
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search by keyword (e.g., Duplex, Apartment)">
+      
+      <select id="locationFilter">
+        <option value="all">Filter by Location</option>
+        <option value="Lagos">Lagos</option>
+        <option value="Abuja">Abuja</option>
+        <option value="Port Harcourt">Port Harcourt</option>
+      </select>
+
+      <select id="priceFilter">
+        <option value="all">Filter by Price</option>
+        <option value="low">Below ₦60,000,000</option>
+        <option value="mid">₦60,000,000 - ₦100,000,000</option>
+        <option value="high">Above ₦100,000,000</option>
+      </select>
+    </div>
+
+    <!-- Properties Grid -->
+    <div id="propertyGrid" class="grid">
+
+      <div class="card property-card" data-location="Lagos" data-price="50000000" data-title="3-Bedroom Duplex">
+        <img src="images/property1.jpeg" alt="Duplex">
+        <div class="info">
+          <h3>3-Bedroom Duplex</h3>
+          <p>Location: Lagos</p>
+          <p>₦50,000,000</p>
+          <a href="property1.html" class="primary-btn">View Details</a>
+          <a href="contact.html" class="secondary-btn">Enquire</a>
+        </div>
+      </div>
+
+      <div class="card property-card" data-location="Abuja" data-price="75000000" data-title="Luxury Apartment">
+        <img src="images/property2.jpeg" alt="Apartment">
+        <div class="info">
+          <h3>Luxury Apartment</h3>
+          <p>Location: Abuja</p>
+          <p>₦75,000,000</p>
+          <a href="property2.html" class="primary-btn">View Details</a>
+          <a href="contact.html" class="secondary-btn">Enquire</a>
+        </div>
+      </div>
+
+      <div class="card property-card" data-location="Port Harcourt" data-price="120000000" data-title="Commercial Building">
+        <img src="images/property3.jpeg" alt="Building">
+        <div class="info">
+          <h3>Commercial Building</h3>
+          <p>Location: Port Harcourt</p>
+          <p>₦120,000,000</p>
+          <a href="property3.html" class="primary-btn">View Details</a>
+          <a href="contact.html" class="secondary-btn">Enquire</a>
+        </div>
+      </div>
+
+      <!-- Add more properties as needed -->
+      
+    </div>
+
+    <!-- No results message -->
+    <div id="noResults">No properties match your search.</div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+      <!-- <a href="#" class="back-to-top"><i class="ri-arrow-up-fill"></i></a> -->
+      <div class="footer-container">
+          <div class="footer-info">
+              <h3 >Bistroi Construction Nig LTD.</h3>
+              <p>Your trusted partner in construction and development.</p>
+              <br>
+              <p class="social-links">Follow us on:</p>
+              <p>
+                  <a href="#"><i class="ri-facebook-box-line social-icon"></i></a>
+                  <a href="#"><i class="ri-linkedin-box-line social-icon"></i></a>
+                  <a href="#"><i class="ri-instagram-line social-icon"></i></a>
+                  <a href="#"><i class="ri-whatsapp-line social-icon"></i></a>
+              </p>
+          </div>            
+          <div class="nav-links">
+              <p>Quick Links:</p>
+              <a href="index.html">Home</a>
+              <a href="aboutUs.html">About Us</a>
+              <a href="services.html">Services</a>
+              <a href="projects.html">Projects</a>
+              <a href="contact.html">Contact Us</a>
+          </div>
+          <a href="">
+              <img class="map-img" src="images/map.jpeg" alt="Map Location">
+          </a>
+      </div>
+      <p class="footer-bottom">&copy; 2024 Bistroi Construction Nig LTD. All rights reserved.</p>
+  </footer>
+
+
+  <!-- Import JS from main.js -->
+  <script src="main.js"></script>
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const locationFilter = document.getElementById('locationFilter');
+    const priceFilter = document.getElementById('priceFilter');
+    const propertyCards = document.querySelectorAll('.property-card');
+    const noResults = document.getElementById('noResults');
+
+    function filterProperties() {
+      const searchText = searchInput.value.toLowerCase();
+      const selectedLocation = locationFilter.value;
+      const selectedPrice = priceFilter.value;
+
+      let visibleCount = 0;
+
+      propertyCards.forEach(card => {
+        const title = card.dataset.title.toLowerCase();
+        const location = card.dataset.location;
+        const price = parseInt(card.dataset.price);
+
+        let matchesSearch = title.includes(searchText);
+        let matchesLocation = (selectedLocation === 'all' || location === selectedLocation);
+        let matchesPrice = false;
+
+        if (selectedPrice === 'all') {
+          matchesPrice = true;
+        } else if (selectedPrice === 'low' && price < 60000000) {
+          matchesPrice = true;
+        } else if (selectedPrice === 'mid' && price >= 60000000 && price <= 100000000) {
+          matchesPrice = true;
+        } else if (selectedPrice === 'high' && price > 100000000) {
+          matchesPrice = true;
+        }
+
+        if (matchesSearch && matchesLocation && matchesPrice) {
+          card.style.display = 'block';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Show message if no results
+      if (visibleCount === 0) {
+        noResults.style.display = 'block';
+      } else {
+        noResults.style.display = 'none';
+      }
+    }
+
+    searchInput.addEventListener('input', filterProperties);
+    locationFilter.addEventListener('change', filterProperties);
+    priceFilter.addEventListener('change', filterProperties);
+  </script>
+</body>
+</html>
