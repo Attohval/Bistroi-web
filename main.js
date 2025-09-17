@@ -1,23 +1,25 @@
-    const hamburger = document.getElementById("hamburger");
-    const sideMenu = document.getElementById("sideMenu");
+      const hamburger = document.getElementById("hamburger");
+        const sideMenu = document.getElementById("sideMenu");
 
-    // Toggle menu
-    hamburger.addEventListener("click", (e) => {
-      e.stopPropagation(); // prevent triggering body click
-      sideMenu.classList.toggle("active");
-    });
+        // Toggle menu
+        hamburger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        sideMenu.classList.toggle("active");
+        hamburger.classList.toggle("active"); // toggle X icon
+        });
 
-    // Close menu when clicking outside
-    document.body.addEventListener("click", () => {
-      if (sideMenu.classList.contains("active")) {
-        sideMenu.classList.remove("active");
-      }
-    });
+        // Close menu when clicking outside
+        document.body.addEventListener("click", () => {
+        if (sideMenu.classList.contains("active")) {
+            sideMenu.classList.remove("active");
+            hamburger.classList.remove("active"); // reset to hamburger
+        }
+        });
 
-    // Prevent closing when clicking inside menu
-    sideMenu.addEventListener("click", (e) => {
-      e.stopPropagation();
-    });
+        // Prevent closing when clicking inside menu
+        sideMenu.addEventListener("click", (e) => {
+        e.stopPropagation();
+        });
 
 
     // Hero section functionality ------------------->>>
