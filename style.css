@@ -887,12 +887,12 @@
   }
   
   #thankYou {
-    background-color: #650505;
+    background-color: var(--alternate-txt);
   }
   
   .thankYou-section {
     height: 70vh;
-    padding-top: 32px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -905,7 +905,7 @@
   }
 
   .thankYou-section p {
-    color: var(--alternate-txt);
+    color: var(--secondary-txt);
   }
 
   @media (max-width: 660px) {
