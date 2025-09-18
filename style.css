@@ -70,18 +70,23 @@
       position: fixed;
       bottom: 30px;
       right: 30px;
-      background: #333;
-      color: white;
+      background: var(--primary-bg);
       border: none;
       padding: 12px 18px;
       border-radius: 8px;
       cursor: pointer;
-      font-size: 16px;
       display: none; /* hidden by default */
       transition: opacity 0.3s ease;
     }
       #backToTop:hover {
-      background: #555;
+      background: var(--secondary-bg);
+    }
+
+    .ri-arrow-up-line {
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--secondary-txt);
+      vertical-align: middle;
     }
     
     /* Header */
@@ -426,19 +431,6 @@
       background: var(--footer-bg);
     }
 
-    .back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: var(--primary-bg);
-      color: var(--secondary-txt);
-      padding: 4px;
-      border-radius: 30%;
-      font-size: 32px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-      /* transition: background 0.3s; */
-      z-index: 1000;
-    }
     .footer-container {
         color: var(--secondary-txt);
         display: grid;
@@ -905,6 +897,10 @@
     }
     #footer {
       padding: 40px 20px;
+    }
+    #backToTop {
+      bottom: 100px;
+      right: 10px;
     }
   }
   
