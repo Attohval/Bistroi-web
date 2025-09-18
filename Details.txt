@@ -1,33 +1,40 @@
+Contact information
+
 Email: bistroiconstruction@gmail.com
 Phone: 07077118289
+Address: 
 
-Develop a website (
+website details and structure (
 
     colors{ 
-        primary bg: #c00505
-        secondary bg: #650505
-        primary txt: #212020ff
-        secondary txt: #ffffff
+        --primary-bg: #c00505;
+        --alternate-bg: #ffffff;
+        --secondary-bg: #650505;
+        --footer-bg: #360303;
+        --primary-txt: rgb(47, 47, 47);
+        --secondary-txt: #ffffff;
+        --alternate-txt: #cabcbc;
     }
 
     Typography{ Poppins, Inter, or Roboto }
 
-    Layout{ Full-width sections, big hero image, lots of whitespaces }
+    Layout{ Full-width sections, big hero image, hero titles }
     
-    Navigation{ Fixed top navbar, hamburger menu on mobile }
+    Navigation{ Fixed top navbar, hamburger menu on mobile , slide from right}
     
-    Footer{ Company info, quick links, social media icons }
-
     Home : Hero section with background image,services overview and a call-to-action.
     
     About Us: Company story, values and mission.
     
     Services: List of services with images.
+
+    Property: Sample properties available for sale (with btn to view more and btn for enquiry)
     
     Projects: Gallery of completed projects with short descriptions.
     
     Contact: Contact form, company address and map.
 
+    Footer{ Company info, quick links, social media icons }
 
     ------------------------------------------------
     Hamburger menu: Slide from right, toggle on and off, click anywhere on the page to remove toggled menu.
