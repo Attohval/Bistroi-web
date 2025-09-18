@@ -65,6 +65,24 @@
       border-radius: 5px;
       color: var(--secondary-txt);
     }
+
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #333;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      display: none; /* hidden by default */
+      transition: opacity 0.3s ease;
+    }
+      #backToTop:hover {
+      background: #555;
+    }
     
     /* Header */
     header {
@@ -701,9 +719,13 @@
     .project-info p {
       font-size: 14px;
       line-height: 1.4;
-      color: var(--primary-txt);
+      color: var(--secondary-txt);
     }
 
+    .ri-arrow-left-s-fill {
+      font-size: 18px;
+      font-weight: bold;
+    }
 
     /* contact section styling ----------------------->> */
     .contact-hero {
@@ -891,7 +913,7 @@
   }
   
   .thankYou-section {
-    height: 70vh;
+    height: 100vh;
     padding: 40px;
     display: flex;
     flex-direction: column;

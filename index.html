@@ -20,12 +20,12 @@
     <!-- Side nav menu -->
     <nav id="sideMenu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="properties.html">Properties</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html" id="contactUs">Contact Us</a></li>
+            <li><a href="index.html" title="Go to Home">Home</a></li>
+            <li><a href="aboutUs.html" title="Learn more About Us">About Us</a></li>
+            <li><a href="services.html" title="View Our Services">Services</a></li>
+            <li><a href="properties.html" title="Browse Properties">Properties</a></li>
+            <li><a href="projects.html" title="See Our Projects">Projects</a></li>
+            <li><a href="contact.html" id="contactUs" title="Get in Touch">Contact Us</a></li>
         </ul>
     </nav>
     <!-- Home hero -->
@@ -33,11 +33,9 @@
         <div class="slides" id="heroSlides">
             <!-- Clones for circular loop -->
             <div class="slide" style="background: linear-gradient(to right,#c00505,#650505);">
-                <img src="images/road.jpeg" alt="">
-            </div> <!-- clone of last -->
-            
+                <img src="images/road.jpeg" alt="road" class="hero-img">
+            </div> <!-- clone of last -->            
             <div class="slide" style="background: linear-gradient(to right,#c00505,#650505);">
-                
                 <div>
                     <h1>Building Dreams, Creating Landmarks</h1>
                     <div class="hero-btn-container">
@@ -45,7 +43,7 @@
                         <a class="secondary-btn" href="aboutUs.html">Learn More</a>
                     </div>
                 </div>
-                <img src="images/site.jpeg" alt="" class="hero-img">
+                <img src="images/site.jpeg" alt="construction site" class="hero-img">
             </div>
             <div class="slide" style="background: linear-gradient(to right,#c00505,#650505);">
                 <div>
@@ -86,8 +84,7 @@
                     </div>
                 </div>
                 <img src="images/tipper-vehicle.jpeg" alt="" class="hero-img">
-            </div>
-            
+            </div>            
             <div class="slide" style="background: linear-gradient(to right,#c00505,#650505);">
                 <div>
                     <h1>Your Vision , Our Construction</h1>
@@ -99,10 +96,6 @@
                 <img src="images/road.jpeg" alt="" class="hero-img">
             </div> <!-- clone of first -->
         </div>
-
-        <!-- <button class="nav-btn prev" id="heroPrev">&#10094;</button>
-        <button class="nav-btn next" id="heroNext">&#10095;</button> -->
-
         <div class="dots" id="heroDots"></div>
     </section>
     <!-- Home hero section -->
@@ -240,9 +233,10 @@
             </div>
         </div>
     </section>
+     <!-- Back to Top Button -->
+    <button id="backToTop">↑ Top</button>
     <!-- Footer -->
     <footer id="footer">
-        <a href="#" class="back-to-top"><i class="ri-arrow-up-fill"></i></a>
         <div class="footer-container">
             <div class="footer-info">
                 <h3 >Bistroi Construction Nig LTD.</h3>
@@ -250,27 +244,28 @@
                 <br>
                 <p class="social-links">Follow us on:</p>
                 <p>
-                    <a href="#"><i class="ri-facebook-box-line social-icon"></i></a>
-                    <a href="#"><i class="ri-linkedin-box-line social-icon"></i></a>
-                    <a href="#"><i class="ri-instagram-line social-icon"></i></a>
-                    <a href="#"><i class="ri-whatsapp-line social-icon"></i></a>
+                    <a href="#" title="Facebook"><i class="ri-facebook-box-line social-icon"></i></a>
+                    <a href="#" title="LinkedIn"><i class="ri-linkedin-box-line social-icon"></i></a>
+                    <a href="#" title="Instagram"><i class="ri-instagram-line social-icon"></i></a>
+                    <a href="#" title="WhatsApp"><i class="ri-whatsapp-line social-icon"></i></a>
                 </p>
             </div>            
             <div class="nav-links">
                 <p>Quick Links:</p>
-                <a href="index.html">Home</a>
-                <a href="aboutUs.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="index.html" title="Go to Home">Home</a>
+                <a href="aboutUs.html" title="Learn more About Us">About Us</a>
+                <a href="services.html" title="View Our Services">Services</a>
+                <a href="projects.html" title="See Our Projects">Projects</a>
+                <a href="contact.html" title="Get in Touch">Contact Us</a>
             </div>
-            <a href="">
+            <a href="" title="Our Location">
                 <img class="map-img" src="images/map.jpeg" alt="Map Location">
             </a>
         </div>
         <p class="footer-bottom">&copy; 2024 Bistroi Construction Nig LTD. All rights reserved.</p>
     </footer>
     <!-- Import JS from main.js -->
+    <script src="slider.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
