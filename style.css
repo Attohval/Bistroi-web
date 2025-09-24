@@ -842,7 +842,7 @@
       scroll-snap-type: x mandatory;
     }
 
-     .property-images img {
+    .property-images img {
       flex: 0 0 auto;
       height: 300px;
       max-width: 100%;
