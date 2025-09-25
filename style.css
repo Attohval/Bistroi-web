@@ -279,7 +279,7 @@
       max-width: 350px;
       text-align: center;
       padding: 16px 8px;
-      box-shadow: 0 1px 5px 0px var(--primary-txt);
+      box-shadow: 0 1px 5px 0px var(--alternate-txt);
       border-radius: 10px;
     }
     
@@ -464,6 +464,10 @@
     .nav-links a {
       color: var(--secondary-txt);
       margin: 8px;
+    }
+    .nav-links a:hover {
+      color: var(--primary-bg);
+      transition: color 0.3s;
     }
 
     @media (max-width: 768px) {
